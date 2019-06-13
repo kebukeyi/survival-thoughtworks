@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="13.0" prefWidth="13.0" type="StackPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <!--<tabs>-->
+
+        <!--<Tab fx:id="tabStatus" >-->
+            <!--&lt;!&ndash;<content>&ndash;&gt;-->
+                <!--<AnchorPane fx:id="pane0">-->
+                    <children>
+                        <!--<GridPane layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="29.0">-->
+                            <!--<columnConstraints>-->
+                                <!--<ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="60.0" />-->
+                                <!--<ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="96.0" />-->
+                            <!--</columnConstraints>-->
+                            <!--<rowConstraints>-->
+                                <!--<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+                                <!--<RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />-->
+                                <!--<RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />-->
+                                <!--<RowConstraints maxHeight="48.0" minHeight="6.0" prefHeight="27.0" vgrow="SOMETIMES" />-->
+                            <!--</rowConstraints>-->
+                            <!--<children>-->
+
+                                <JFXButton fx:id="charge" nodeOrientation="LEFT_TO_RIGHT" onAction="#chargeAction" prefHeight="13.0" prefWidth="10.0" style="-fx-background-color: #1495F7;" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </JFXButton>
+
+
+                            </children>
+                        <!--</GridPane>-->
+                    <!--</children>-->
+                <!--</AnchorPane>-->
+            <!--&lt;!&ndash;</content>&ndash;&gt;-->
+        <!--</Tab>-->
+
+
+
+    <!--</tabs>-->
+
+</fx:root>

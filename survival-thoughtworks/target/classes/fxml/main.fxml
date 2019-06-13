@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="700.0" prefWidth="1700.0" type="StackPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <BorderPane prefHeight="555.0" prefWidth="984.0" stylesheets="@../css/main.css">
+
+            <top>
+                <JFXToolbar prefWidth="582.0" BorderPane.alignment="CENTER" />
+            </top>
+
+            <left>
+                <!--<JFXListView fx:id="deviceGroupList" prefHeight="450.0" prefWidth="97.0" styleClass="mylistview" BorderPane.alignment="CENTER" />-->
+                <GridPane prefHeight="450.0" prefWidth="97.0">
+                    <JFXButton fx:id="start" nodeOrientation="LEFT_TO_RIGHT" onAction="#startOntion" prefHeight="29.0" prefWidth="86.0" style="-fx-background-color: #1495F7;" text="开始" GridPane.rowIndex="4">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                  <GridPane.margin>
+                     <Insets right="5.0" top="15.0" />
+                  </GridPane.margin>
+                    </JFXButton>
+
+                    <JFXButton fx:id="speed1" nodeOrientation="LEFT_TO_RIGHT" onAction="#speedOntion1" prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #1495F7;" text="速度*10" GridPane.rowIndex="11">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                  <GridPane.margin>
+                     <Insets top="20.0" />
+                  </GridPane.margin>
+                    </JFXButton>
+
+                    <!--<JFXButton fx:id="speed" nodeOrientation="LEFT_TO_RIGHT" onAction="#speedOntion" prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #1495F7;" text="结束" GridPane.rowIndex="5">-->
+                        <!--<font>-->
+                            <!--<Font name="System Bold" size="14.0" />-->
+                        <!--</font>-->
+                  <!--<GridPane.margin>-->
+                     <!--<Insets top="15.0" />-->
+                  <!--</GridPane.margin>-->
+                    <!--</JFXButton>-->
+
+                    <JFXButton fx:id="refresh" nodeOrientation="LEFT_TO_RIGHT" onAction="#refreshOntion" prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #1495F7;" text="初始化" GridPane.rowIndex="6">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets top="15.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+
+                    <JFXButton fx:id="speed2" nodeOrientation="LEFT_TO_RIGHT" onAction="#speedOntion2" prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #1495F7;" text="速度/10" GridPane.rowIndex="7">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets top="15.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="94.0" text="当前速度 : " GridPane.rowIndex="12">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <GridPane.margin>
+                     <Insets top="20.0" />
+                  </GridPane.margin>
+               </Label>
+
+               <Label fx:id="currentspeed" alignment="CENTER" prefHeight="40.0" prefWidth="97.0" text="" GridPane.rowIndex="14" />
+
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
+                </GridPane>
+            </left>
+
+            <center>
+                <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="400.0" prefWidth="578.0" BorderPane.alignment="CENTER">
+                    <content>
+                        <!--<JFXMasonryPane fx:id="deviceMasonryPane" prefHeight="448.0" prefWidth="724.0" />-->
+                        <FlowPane fx:id="flowpane" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT">
+                            <children>
+
+                            </children>
+                        </FlowPane>
+                    </content>
+                </ScrollPane>
+
+            </center>
+
+        </BorderPane>
+    </children>
+</fx:root>
