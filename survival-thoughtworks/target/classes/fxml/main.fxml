@@ -77,7 +77,6 @@
                      <Insets top="20.0" />
                   </GridPane.margin>
                </Label>
-
                <Label fx:id="currentspeed" alignment="CENTER" prefHeight="40.0" prefWidth="97.0" text="" GridPane.rowIndex="14" />
 
                <columnConstraints>

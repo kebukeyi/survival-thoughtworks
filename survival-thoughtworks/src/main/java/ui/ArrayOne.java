@@ -78,7 +78,7 @@ public class ArrayOne {
         return afterMatrix;
     }
 
-
+//
 //    public  int comput(int[][] one, int i, int j) {
 //        int sum = 0;
 //        if (i == 0 && j == 0) {//[0,0]
@@ -112,39 +112,38 @@ public class ArrayOne {
         int row = nextMatrix.length;
         int col = nextMatrix[0].length;
 
-        if(i!=0){
+        //左边
+        if(j!=0){
             num+=nextMatrix[i][j-1];
         }
-
         //左上角
-        if(i!=0&&j!=0){
-            num+=nextMatrix[j-1][i-1];
+        if(j!=0&&i!=0){
+            num+=nextMatrix[i-1][j-1];
         }
         //上边
-        if(j!=0){
-            num+=nextMatrix[j-1][i];
+        if(i!=0){
+            num+=nextMatrix[i-1][j];
         }
         //右上
-        if(i!=col-1&&j!=0){
-            num+=nextMatrix[j-1][i+1];
+        if(j!=col-1&&i!=0){
+            num+=nextMatrix[i-1][j+1];
         }
         //右边
-        if(i!=col-1){
-            num+=nextMatrix[j][i+1];
+        if(j!=col-1){
+            num+=nextMatrix[i][j+1];
         }
         //右下
-        if(i!=col-1&&j!=row-1){
-            num+=nextMatrix[j+1][i+1];
+        if(j!=col-1&&i!=row-1){
+            num+=nextMatrix[i+1][j+1];
         }
         //下边
-        if(j!=row-1){
-            num+=nextMatrix[j+1][i];
+        if(i!=row-1){
+            num+=nextMatrix[i+1][j];
         }
         //左下
-        if(i!=0&&j!=row-1){
-            num+=nextMatrix[j+1][i-1];
+        if(j!=0&&i!=row-1){
+            num+=nextMatrix[i+1][j-1];
         }
-
         return num;
     }
 

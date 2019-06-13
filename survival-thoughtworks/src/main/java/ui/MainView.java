@@ -72,7 +72,6 @@ public class MainView extends StackPane {
             });
         } else {
             refresh.setDisable(false);
-
             start.setText("开始");
             FLAG = false;
         }
@@ -144,7 +143,7 @@ public class MainView extends StackPane {
                     }
                     refreshDeviceCell(1, 1);//next =0
                     for (int x = 0; x < 19; x++) {
-                        for (int y = 0; y < 51; y++) {
+                        for (int y = 0; y < 71; y++) {
                             ArrayOne.nextMatrix[x][y] = ArrayOne.middleMatrix[x][y];
                         }
                     }
@@ -160,7 +159,7 @@ public class MainView extends StackPane {
 
     public void init() {
         for (int i = 0; i < 19; i++) {
-            for (int j = 0; j < 51; j++) {
+            for (int j = 0; j < 71; j++) {
                 ArrayOne.middleMatrix[i][j] = 0;
             }
         }
